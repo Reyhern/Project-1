@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+
+        <div class="logo">
+          <a href="#">
+            <img src="image/logo.png" alt="chef-hat Logo" />
+            <span class="red">Ita</span><span class="white">li</span><span class="green">ano</span>
+          </a>
+        </div>
+        
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li class="menu_bar"><a href="#">Home</a></li>
+          <li class="menu_bar"><a href="#">Products</a></li>
+          <li class="menu_bar"><a href="#">Testimonials</a></li>
+          <li class="menu_bar"><a href="#">About us</a></li>
+          <li class="menu_bar"><a href="#">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Experience Italy Through Our <span>Pizzas</span>.</h2>
+        <p>
+          Whether you’re here for a crispy thin crust, a cheesy deep-dish masterpiece, 
+          or a custom creation piled high with your favorite toppings—you’re in the right place.
+        </p>
+        <button>Order Now</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <p>All Rights Reserved by Reyhern Hernandez 2025 &copy;</p>
+      </div> 
+    </footer>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
